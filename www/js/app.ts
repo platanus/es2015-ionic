@@ -1,5 +1,6 @@
-import 'angular';
 import 'ionic';
+import 'css/styles.scss!';
+import 'angular';
 
 angular.module('starter', ['ionic'])
 

@@ -21,7 +21,12 @@
     },
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.4.8",
-      "ionic": "github:driftyco/ionic-bower@^1.2.0"
+      "angular-local-storage": "npm:angular-local-storage@^0.2.2",
+      "angular-restmod": "github:platanus/angular-restmod@^1.1.11",
+      "driftyco/ng-cordova": "github:driftyco/ng-cordova@^0.1.23-alpha",
+      "ionic": "github:driftyco/ionic-bower@^1.2.0",
+      "platanus-angular-auth": "npm:platanus-angular-auth@^0.1.0",
+      "scss": "github:theefer/plugin-sass@master"
     },
     "devDependencies": {
       "typescript": "npm:typescript@^1.6.2"
