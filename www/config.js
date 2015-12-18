@@ -9,7 +9,13 @@ System.config({
   },
 
   packages: {
+    "/www/js": {
+      "defaultExtension": "ts"
+    },
     "/js": {
+      "defaultExtension": "ts"
+    },
+    "/../spec": {
       "defaultExtension": "ts"
     }
   },
@@ -18,10 +24,11 @@ System.config({
     "angular": "github:angular/bower-angular@1.4.8",
     "angular-local-storage": "npm:angular-local-storage@0.2.2",
     "angular-restmod": "github:platanus/angular-restmod@1.1.11",
+    "css": "github:systemjs/plugin-css@0.1.20",
     "driftyco/ng-cordova": "github:driftyco/ng-cordova@0.1.23-alpha",
     "ionic": "github:driftyco/ionic-bower@1.2.0",
     "platanus-angular-auth": "npm:platanus-angular-auth@0.1.0",
-    "scss": "github:theefer/plugin-sass@master",
+    "scss": "github:mobilexag/plugin-sass@0.1.0",
     "typescript": "npm:typescript@1.7.5",
     "github:angular-ui/ui-router@0.2.13": {
       "angular": "github:angular/bower-angular@1.4.8"
@@ -60,11 +67,17 @@ System.config({
     "github:jspm/nodelibs-process@0.1.2": {
       "process": "npm:process@0.11.2"
     },
+    "github:jspm/nodelibs-querystring@0.1.0": {
+      "querystring": "npm:querystring@0.2.0"
+    },
     "github:jspm/nodelibs-stream@0.1.0": {
       "stream-browserify": "npm:stream-browserify@1.0.0"
     },
     "github:jspm/nodelibs-string_decoder@0.1.0": {
       "string_decoder": "npm:string_decoder@0.10.31"
+    },
+    "github:jspm/nodelibs-url@0.1.0": {
+      "url": "npm:url@0.10.3"
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
@@ -72,12 +85,15 @@ System.config({
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
     },
+    "github:mobilexag/plugin-sass@0.1.0": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "querystring": "github:jspm/nodelibs-querystring@0.1.0",
+      "reqwest": "github:ded/reqwest@2.0.5",
+      "sass.js": "npm:sass.js@0.9.4",
+      "url": "github:jspm/nodelibs-url@0.1.0"
+    },
     "github:platanus/angular-restmod@1.1.11": {
       "angular": "github:angular/bower-angular@1.4.8"
-    },
-    "github:theefer/plugin-sass@master": {
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "sass.js": "npm:sass.js@0.9.4"
     },
     "npm:asn1.js@4.2.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
@@ -263,6 +279,9 @@ System.config({
       "parse-asn1": "npm:parse-asn1@5.0.0",
       "randombytes": "npm:randombytes@2.0.1"
     },
+    "npm:punycode@1.3.2": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:randombytes@2.0.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
@@ -302,6 +321,12 @@ System.config({
     },
     "npm:string_decoder@0.10.31": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
+    },
+    "npm:url@0.10.3": {
+      "assert": "github:jspm/nodelibs-assert@0.1.0",
+      "punycode": "npm:punycode@1.3.2",
+      "querystring": "npm:querystring@0.2.0",
+      "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:util@0.10.3": {
       "inherits": "npm:inherits@2.0.1",

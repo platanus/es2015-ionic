@@ -3,7 +3,14 @@
   "version": "1.1.1",
   "description": "es2015-ionic: An Ionic project",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.15",
+    "karma-jasmine": "^0.3.6",
+    "karma-jspm": "^2.0.2",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.19"
+  },
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
@@ -23,10 +30,11 @@
       "angular": "github:angular/bower-angular@^1.4.8",
       "angular-local-storage": "npm:angular-local-storage@^0.2.2",
       "angular-restmod": "github:platanus/angular-restmod@^1.1.11",
+      "css": "github:systemjs/plugin-css@^0.1.20",
       "driftyco/ng-cordova": "github:driftyco/ng-cordova@^0.1.23-alpha",
       "ionic": "github:driftyco/ionic-bower@^1.2.0",
       "platanus-angular-auth": "npm:platanus-angular-auth@^0.1.0",
-      "scss": "github:theefer/plugin-sass@master"
+      "scss": "github:mobilexag/plugin-sass@^0.1.0"
     },
     "devDependencies": {
       "typescript": "npm:typescript@^1.6.2"

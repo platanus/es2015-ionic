@@ -1,5 +1,4 @@
 import 'ionic';
-import 'css/styles.scss!';
 import 'angular';
 
 angular.module('starter', ['ionic'])
@@ -21,3 +20,7 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+export default function() {
+  return 2;
+}
