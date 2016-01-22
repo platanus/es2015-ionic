@@ -1,8 +1,5 @@
-import 'angular';
-import appFn from 'www/js/app';
-
-describe("A suite", function() {
-  it("contains spec with an expectation", function() {
-    expect(appFn()).toBe(2);
-  });
+describe('Check configuration', () => {
+  it ('is true', () => {
+    expect(true).toBe(true);
+  })
 });

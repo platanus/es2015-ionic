@@ -14,32 +14,51 @@ module.exports = function(config) {
 
 
     // list of files / patterns to load in the browser
-    files: [
-    ],
+    files: [],
 
     jspm: {
       // Edit this to your needs
+      config: 'www/config.js',
       loadFiles: ['spec/**/*.ts'],
-      serveFiles: ['www/**/*.ts', 'www/**/*.scss']
+      serveFiles: ['www/**/*.*']
+    },
+
+    proxies: {
+      'spec/': '/base/spec/',
     },
 
     // list of files to exclude
-    exclude: [
-    ],
+    exclude: [],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'spec/**/*.ts': ['typescript']
     },
 
 
-    proxies : { // avoid Karma's ./base virtual directory
-      '/www/': '/base/www/',
-      '/spec/': '/base/spec/',
-      '/jspm_packages/': '/base/www/jspm_packages/'
+    typescriptPreprocessor: {
+      // options passed to the typescript compiler
+      options: {
+        sourceMap: false, // (optional) Generates corresponding .map file.
+        target: 'ES5', // (optional) Specify ECMAScript target version: 'ES3' (default), or 'ES5'
+        module: 'amd', // (optional) Specify module code generation: 'commonjs' or 'amd'
+        noImplicitAny: true, // (optional) Warn on expressions and declarations with an implied 'any' type.
+        noResolve: true, // (optional) Skip resolution and preprocessing.
+        removeComments: true, // (optional) Do not emit comments to output.
+        concatenateOutput: false // (optional) Concatenate and emit output to single file. By default true if module option is omited, otherwise false.
+      },
+      // extra typing definitions to pass to the compiler (globs allowed)
+      typings: [
+        'typings/tsd.d.ts',
+        'typings/jasmine/jasmine.d.ts'
+      ],
+      // transforming the filenames
+      transformPath: function(path) {
+        return path.replace(/\.ts$/, '.ts.js');
+      }
     },
-
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
@@ -76,5 +95,5 @@ module.exports = function(config) {
     // Concurrency level
     // how many browser should be started simultanous
     concurrency: Infinity
-  })
-}
+  });
+};
