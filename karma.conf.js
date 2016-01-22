@@ -14,7 +14,9 @@ module.exports = function(config) {
 
 
     // list of files / patterns to load in the browser
-    files: [],
+    files: [
+      "node_modules/core-js/client/shim.min.js"
+    ],
 
     jspm: {
       // Edit this to your needs
@@ -25,6 +27,8 @@ module.exports = function(config) {
 
     proxies: {
       'spec/': '/base/spec/',
+      '/base/js/': '/base/www/js/',
+      '/base/jspm_packages': '/base/www/jspm_packages'
     },
 
     // list of files to exclude
@@ -44,6 +48,7 @@ module.exports = function(config) {
         sourceMap: false, // (optional) Generates corresponding .map file.
         target: 'ES5', // (optional) Specify ECMAScript target version: 'ES3' (default), or 'ES5'
         module: 'amd', // (optional) Specify module code generation: 'commonjs' or 'amd'
+        moduleResolution: 'none',
         noImplicitAny: true, // (optional) Warn on expressions and declarations with an implied 'any' type.
         noResolve: true, // (optional) Skip resolution and preprocessing.
         removeComments: true, // (optional) Do not emit comments to output.
@@ -85,7 +90,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode

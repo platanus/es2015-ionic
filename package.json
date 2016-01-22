@@ -4,6 +4,7 @@
   "description": "es2015-ionic: An Ionic project",
   "dependencies": {},
   "devDependencies": {
+    "core-js": "^2.0.3",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.15",
     "karma-jasmine": "^0.3.6",
@@ -36,7 +37,8 @@
       "driftyco/ng-cordova": "github:driftyco/ng-cordova@^0.1.23-alpha",
       "ionic": "github:driftyco/ionic-bower@^1.2.0",
       "platanus-angular-auth": "npm:platanus-angular-auth@^0.1.0",
-      "scss": "github:mobilexag/plugin-sass@^0.1.0"
+      "scss": "github:mobilexag/plugin-sass@^0.1.0",
+      "ts": "github:frankwallis/plugin-typescript@^2.4.9"
     },
     "devDependencies": {
       "typescript": "npm:typescript@^1.6.2"

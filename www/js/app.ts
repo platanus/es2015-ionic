@@ -1,5 +1,6 @@
 import 'ionic';
 import 'angular';
+import sum from "./sum";
 
 angular.module('starter', ['ionic'])
 

@@ -16,8 +16,12 @@ System.config({
     },
     "/www/spec": {
       "defaultExtension": "ts"
+    },
+    "/base/www/spec": {
+      "defaultExtension": "ts"
     }
   },
+
   map: {
     "angular": "github:angular/bower-angular@1.4.8",
     "angular-local-storage": "npm:angular-local-storage@0.2.2",
@@ -27,6 +31,7 @@ System.config({
     "ionic": "github:driftyco/ionic-bower@1.2.0",
     "platanus-angular-auth": "npm:platanus-angular-auth@0.1.0",
     "scss": "github:mobilexag/plugin-sass@0.1.0",
+    "ts": "github:frankwallis/plugin-typescript@2.4.9",
     "typescript": "npm:typescript@1.7.5",
     "github:angular-ui/ui-router@0.2.13": {
       "angular": "github:angular/bower-angular@1.4.8"
@@ -43,6 +48,9 @@ System.config({
       "angular-sanitize": "github:angular/bower-angular-sanitize@1.4.8",
       "angular-ui-router": "github:angular-ui/ui-router@0.2.13",
       "css": "github:systemjs/plugin-css@0.1.20"
+    },
+    "github:frankwallis/plugin-typescript@2.4.9": {
+      "typescript": "npm:typescript@1.7.5"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
