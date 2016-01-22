@@ -9,7 +9,9 @@
     "karma-jasmine": "^0.3.6",
     "karma-jspm": "^2.0.2",
     "karma-phantomjs-launcher": "^0.2.1",
-    "phantomjs": "^1.9.19"
+    "karma-typescript-preprocessor": "0.0.21",
+    "phantomjs": "^1.9.19",
+    "typescript": "^1.7.5"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",

@@ -1,5 +1,4 @@
 System.config({
-  baseURL: "/",
   defaultJSExtensions: true,
   transpiler: "typescript",
   paths: {
@@ -15,11 +14,10 @@ System.config({
     "/js": {
       "defaultExtension": "ts"
     },
-    "/../spec": {
+    "/www/spec": {
       "defaultExtension": "ts"
     }
   },
-
   map: {
     "angular": "github:angular/bower-angular@1.4.8",
     "angular-local-storage": "npm:angular-local-storage@0.2.2",
